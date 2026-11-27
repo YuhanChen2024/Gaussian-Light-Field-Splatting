@@ -5,11 +5,11 @@
 
 ### A Physical Prior-Driven Vision Transformer for Low-Light Image Enhancement
 
-**IEEE Transactions on Circuits and Systems for Video Technology (IEEE TCSVT), 2026 · Early Access**
+**IEEE Transactions on Circuits and Systems for Video Technology (IEEE TCSVT), 2026**
 
 [Yuhan Chen](https://github.com/YuhanChen2024) · Wenxuan Yu · Guofa Li · Fuchen Li · Kunyang Huang · Yicui Shi · Ying Fang · Wenbo Chu · Keqiang Li
 
-[![IEEE Xplore](https://img.shields.io/badge/IEEE%20TCSVT-Early%20Access-00629B?style=for-the-badge&logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/document/11797596)
+[![IEEE Xplore](https://img.shields.io/badge/IEEE%20TCSVT-2026-00629B?style=for-the-badge&logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/document/11797596)
 [![arXiv](https://img.shields.io/badge/arXiv-2606.17985-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2606.17985)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.4.0-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-2EA44F?style=for-the-badge)](LICENSE)
@@ -22,13 +22,9 @@
 
 ---
 
-### Bring light back to the dark — with physics-guided attention.
+<a href="Fig/1.png"><img src="Fig/1.png" width="100%" alt="Overall training and inference architecture of GLFS"></a>
 
-*Model the light. Preserve the color. Recover the details.*
-
-<a href="Fig/11.png"><img src="Fig/11.png" width="100%" alt="GLFS detail-level comparison with low-light enhancement methods on LSRW-Huawei"></a>
-
-<sub>Zoomed-in comparison on LSRW-Huawei (Fig. 14 in the paper). Click the image to explore the details.</sub>
+<sub><b>Fig. 1.</b> Overall training and inference framework of GLFS. An encoder–decoder architecture incorporates a physics-prior-driven GS-ViT bottleneck, with bidirectional adversarial and hybrid supervision during training.</sub>
 
 <br>
 
@@ -49,7 +45,7 @@
 
 ## 📢 News
 
-- **[2026]** GLFS has been accepted by **IEEE TCSVT** and is available in [IEEE Xplore Early Access](https://ieeexplore.ieee.org/document/11797596).
+- **[2026]** GLFS has been accepted by **IEEE TCSVT** and is available in [IEEE Xplore](https://ieeexplore.ieee.org/document/11797596).
 - **[2026-11-05]** The [arXiv preprint](https://arxiv.org/abs/2606.17985v2) has been updated to version 2.
 - **[2026-06-16]** The [first arXiv preprint](https://arxiv.org/abs/2606.17985v1) was released.
 
@@ -84,11 +80,7 @@ The model combines Gaussian geometry, non-local semantic interactions, and hybri
 
 ### Overall architecture
 
-<div align="center">
-<a href="Fig/1.png"><img src="Fig/1.png" width="100%" alt="Overall training and inference architecture of GLFS"></a>
-<br>
-<sub><b>Fig. 1.</b> Overall training and inference framework of GLFS. An encoder–decoder architecture incorporates a physics-prior-driven GS-ViT bottleneck, with bidirectional adversarial and hybrid supervision during training.</sub>
-</div>
+As illustrated in [Fig. 1](Fig/1.png) above, GLFS uses an encoder–decoder architecture with a physics-prior-driven GS-ViT bottleneck.
 
 The architecture is built around three physical-prior modules:
 
@@ -397,6 +389,12 @@ From everyday scenes with non-uniform illumination to challenging extreme low-li
 
 <sub>Paper Fig. 13 · Extreme low-light and challenging noise conditions.</sub>
 
+### Zoomed-in detail comparisons
+
+<a href="Fig/11.png"><img src="Fig/11.png" width="100%" alt="GLFS detail-level comparison with low-light enhancement methods on LSRW-Huawei"></a>
+
+<sub>Paper Fig. 14 · Zoomed-in comparisons on LSRW-Huawei.</sub>
+
 </div>
 
 ## 🧪 Training
@@ -541,7 +539,6 @@ If you use GLFS in your research, please cite the published work:
   author  = {Chen, Yuhan and Yu, Wenxuan and Li, Guofa and Li, Fuchen and Huang, Kunyang and Shi, Yicui and Fang, Ying and Chu, Wenbo and Li, Keqiang},
   journal = {IEEE Transactions on Circuits and Systems for Video Technology},
   year    = {2026},
-  note    = {Early Access},
   url     = {https://ieeexplore.ieee.org/document/11797596}
 }
 ```
@@ -565,9 +562,13 @@ If you use GLFS in your research, please cite the published work:
 
 ## 🤝 Acknowledgements
 
-We thank the authors and maintainers of the LOL, LOL-v2, LSRW, and SID datasets, as well as the Gaussian splatting, Transformer, and low-light enhancement research communities.
+We sincerely thank the authors of the following works for their inspiring research and contributions to the computer vision community:
 
-This work was supported by the National Natural Science Foundation of China (Grants 52672529 and 52372377) and the Young Beijing Scholars Program (Grant 2024-069).
+- **Gaussian Splatting** — [3D Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting) · [2D Gaussian Splatting](https://github.com/hbb1/2d-gaussian-splatting)
+- **[GaussianImage](https://github.com/Xinjie-Q/GaussianImage)**
+- **[LL-GaussianImage](https://github.com/YuhanChen2024/LL-GaussianImage)**
+- **[CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)**
+- **[Vision Transformer (ViT)](https://github.com/google-research/vision_transformer)**
 
 ## ⚖️ License
 
