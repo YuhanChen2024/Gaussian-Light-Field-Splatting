@@ -30,10 +30,8 @@
 
 <table>
 <tr>
-<td align="center" width="25%"><strong>6 / 6</strong><br><sub>Highest PSNR under our paper's evaluation protocol</sub></td>
-<td align="center" width="25%"><strong>27.25 dB</strong><br><sub>PSNR on LOL-v2-Real</sub></td>
-<td align="center" width="25%"><strong>7.804 M</strong><br><sub>Model parameters</sub></td>
-<td align="center" width="25%"><strong>6 benchmarks</strong><br><sub>Pretrained weights &amp; evaluation sets</sub></td>
+<td align="center" width="50%"><strong>6 / 6</strong><br><sub>Highest PSNR under our paper's evaluation protocol</sub></td>
+<td align="center" width="50%"><strong>6 benchmarks</strong><br><sub>Pretrained weights &amp; evaluation sets</sub></td>
 </tr>
 </table>
 
